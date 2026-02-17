@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <!-- Mirrored from netizensstore.com/gymfit_theme/html/multipage_3/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 10:12:06 GMT -->
   <head>
@@ -39,7 +39,9 @@
         padding: 10px 20px;
         border-radius: 25px;
         text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
         font-weight: bold;
       }
 
@@ -455,7 +457,7 @@
                   class="top-left d-flex align-items-center justify-content-between clearfix"
                 >
                   <div class="phone pull-left">
-                    <a href="#">
+                    <a href="https://wa.me/918320279007">
                       <img src="assets/images/call.svg" alt="call" />
                       832 0279 007</a
                     >
@@ -552,7 +554,7 @@
                       </a>
                     </li>
                     <li class="nav-link">
-                      <a href="#contactus" class="js-scroll-trigger">CONTACT</a>
+                      <a href="contact.html">CONTACT</a>
                     </li>
                     <li class="social_nav">
                       <div class="social">
@@ -1058,12 +1060,12 @@
                     PRICING
                   </a>
                 </li>
-                <li><a href="#contactus">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
             <a
               id="whatsappChatButton"
-              href="https://wa.me/8320279007"
+              href="https://wa.me/918320279007"
               target="_blank"
               class="whatsapp-btn"
             >
@@ -1161,7 +1163,7 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-   <script>
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         const navbarCollapse = document.querySelector(".navbar-collapse");
         const navbarToggler = document.querySelector(".navbar-toggler");
@@ -1261,7 +1263,7 @@
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify(data),
-              }
+              },
             );
 
             const resultText = await response.text();
@@ -1274,7 +1276,7 @@
 
               // Close the Bootstrap modal
               const modal = bootstrap.Modal.getInstance(
-                document.getElementById("myModal")
+                document.getElementById("myModal"),
               );
               if (modal) modal.hide();
             } else {
@@ -1368,13 +1370,13 @@
 
           // Get form values
           const name = document.querySelector(
-            "input[name='contactname']"
+            "input[name='contactname']",
           ).value;
           const phone = document.querySelector(
-            "input[name='contactphone']"
+            "input[name='contactphone']",
           ).value;
           const email = document.querySelector(
-            "input[name='contactemail']"
+            "input[name='contactemail']",
           ).value;
           // const messageField = document.querySelector(
           //   "textarea[name='contactmessage']"
@@ -1402,7 +1404,7 @@
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify(data),
-              }
+              },
             );
 
             const resultText = await response.text();
